@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Content Direct Full Site</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />    
+    
+    <script type='text/javascript' src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>   
+    <script type='text/javascript' src="https://disney.sbx1.cdops.net/HTML/Full/v5.5.1/Scripts/contentdirect.ui.js"></script>
+    <script type='text/javascript' src="Scripts/bootstrap.min.js"></script>
+    <script type='text/javascript' src="Scripts/disney.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="Content/StyleSheets/bootstrap.min.css">
+    <link rel="stylesheet" href="Content/StyleSheets/main.css">
+</head>
+<body>
+    <div class="content">
+        <div cd="flexc" cdtype="page" cdpagetype="playerpage" id="cdPageContainer" style="display: none;"></div>
+        <!--<div class="initiatePlay">Play CSG HTTPS Test</div>-->
+        <form class="form-horizontal productInfo">
+						<div class="col-md-3 col-xs-3">
+						  <div class="">
+						  	<input id="productId" name="textinput" placeholder="Product Id" class="form-control input-md" type="text">					    
+						  </div>
+						</div>
+						<div class="col-md-3 col-xs-3" style="margin-left:-15px;">
+						  <div class="">
+						  	<input id="pricingPlanId" name="textinput" placeholder="Pricing Plan Id" class="form-control input-md" type="text">					    
+						  </div>
+						</div>
+						<div class="initiatePlay col-md-3 col-xs-3">Play</div>
+					</fieldset>
+					<div class="blocker" style="display:none"></div>
+				</form>
+        <div cdtype="sp" style="width:100%;height:775px">
+            <div id="player" class="playerControl"></div>
+        </div>
+        <img src="Content/Assets/restart.png" class="restart" style="display:none" />
+        <select class="languageToggle" style="display:none">
+        	<option>Select a language</option>
+        </select>
+    </div>
+</body>
+</html>
